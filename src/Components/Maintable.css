@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    min-width: 780px ;
+    max-width: 780px ;
+    background-color: white;
+}
+#clgbanner{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center ;
+    align-items: center;
+    gap: 0px;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+}
+#clgbanner img{
+    height: 140px;
+    width: 140px;
+}
+#clgbanner #logo{
+    display: flex;
+    flex-direction: column;
+    padding-top: 2%;
+    gap: 5px;
+}
+#hod{
+    display: flex; 
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+#container{
+    margin: 02px 12px 02px 12px;
+}
+#container>p{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
+    justify-content: space-between;
+}
+#container>p> input[type=datetime-loacl]{
+    border: none;
+}
+#container1{
+    display: flex;
+    flex-direction: column;
+    margin-right: 7%;
+}
+#container1 h3{
+    text-align: center;
+}
+#sfbrmain{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border: 5px double black;
+    outline: 2px double black;
+    border-radius: 40px;
+    padding: 20PX;
+}
+#sfbrmain p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#sfbrmain input{
+    border: 0px  solid black;
+    border-bottom:1px solid black;
+    text-align: start;
+}
+table{
+    border: 2px double black;
+    border-right: none;
+    border-bottom: none;
+    empty-cells: show;
+    min-width: 100%;
+}
+th,td{
+    
+    padding: 5.9px;
+    border: 2px double black;
+    border-left: none;
+    border-top: none;
+    align-items: end;
+    justify-content: end;
+    text-align: start;
+    
+}
+table td input[type=radio]{
+    margin-left: 10%;
+    width: 50px;
+    height: 1.5em;
+    
+    
+}
+table td input[type=number]{
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    
+    
+}
+input[type=submit],button{
+    margin: 15px 7% 15px 0%;
+    border-radius: 25px;
+    height: 30px;
+    width: 200px;
+    background-color: green;
+    border: 2px dashed green;
+}
+input[type=radio]:checked{
+    visibility: visible;
+    accent-color: green;
+}
+
+@media print{
+    body{
+        visibility: hidden ;
+    }
+    
+    #container,hr{
+        margin: 02px 12px 02px 12px;
+    }
+    #sfbrmain input[type=text], input{
+        border: none;
+    }
+    input[type=radio]{
+        visibility: hidden;
+    }
+    input[type=radio]:checked{
+        visibility: visible;
+        accent-color: green;
+    }
+    #main{
+        min-width: 1000px;
+        max-width: 1000px;
+        visibility: visible;
+    }
+}
